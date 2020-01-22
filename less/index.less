@@ -60,9 +60,11 @@ html, body {
 // MY CODE HERE
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Righteous&display=swap');
 
-// General Styles 
+// General Styles
 body {
 	font-family: @bodyFont;
+	max-width: 100%;
+	font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -73,12 +75,18 @@ h1, h2, h3, h4, h5, h6 {
 @bgColour: black;
 @bodyFont: 'Comfortaa', cursive;
 @headingFont: 'Righteous', cursive;
+@hoverColour: #1089ff;
 // end variables 
 
 // mixins 
-.flex(){
+.flexNav(){
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+}
+.flexUl(){
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .navStyles(){
@@ -89,16 +97,42 @@ h1, h2, h3, h4, h5, h6 {
 		text-transform: uppercase;
 	}
 }
+
+.logoStyle(){
+	color: white;
+		a {
+			color: white;
+			text-decoration: none;
+		}
+}
 // end mixins 
 
 #navsec {
-	.flex();
-	.navStyles();
+	padding: 1%;
+	.logoStyle();
+	.flexNav();
 	background: @bgColour;
 
-	ul {
-		width: 80%;
-		.flex();
-		justify-content: space-evenly;
-	}
+	h1 {
+		font-size: 2.5rem;
+		a{
+			&:hover {
+				color: grey;
+			}
+		}
+	} // end #navsec h1
+
+	nav {
+		width: 50%;
+		ul {
+			.navStyles();
+			.flexUl();
+			a {
+				font-size: 1rem;
+				&:hover {
+					color: @hoverColour;
+				} // end #navsec nav ul a:hover
+			} // end #navsec nav ul a
+		} // end #navsec nav ul
+	} // end #navsec nav
 } // end #navsec
