@@ -134,6 +134,45 @@ html,
 body {
   height: 100%;
 }
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/comfortaa/v27/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDrMfJQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v8/1cXxaUPXBpj2rGoU7C9WiHGA.ttf) format('truetype');
+}
 body {
-  background: pink;
+  font-family: 'Comfortaa', cursive;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Righteous', cursive;
+}
+#navsec {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background: black;
+}
+#navsec a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#navsec ul {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-evenly;
 }

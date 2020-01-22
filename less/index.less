@@ -57,8 +57,48 @@ html, body {
     height: 100%;
 }
 
-@main-color: pink;
+// MY CODE HERE
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Righteous&display=swap');
 
+// General Styles 
 body {
-	background: @main-color;
+	font-family: @bodyFont;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @headingFont;
+}
+
+// variables
+@bgColour: black;
+@bodyFont: 'Comfortaa', cursive;
+@headingFont: 'Righteous', cursive;
+// end variables 
+
+// mixins 
+.flex(){
+	display: flex;
+	justify-content: space-between;
+}
+
+.navStyles(){
+	color: white;
+	a {
+		color: white;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+}
+// end mixins 
+
+#navsec {
+	.flex();
+	.navStyles();
+	background: @bgColour;
+
+	ul {
+		width: 80%;
+		.flex();
+		justify-content: space-evenly;
+	}
+} // end #navsec
