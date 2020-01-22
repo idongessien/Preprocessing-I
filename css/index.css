@@ -219,7 +219,6 @@ h6 {
   height: 22vh;
   overflow: hidden;
   margin: 0 0 1.5%;
-  border: solid 3px black;
   width: 43%;
 }
 .headersec .imgcrop img {
@@ -256,4 +255,31 @@ h6 {
 }
 .headersec a:hover {
   background: grey;
+}
+.aboutMeSec {
+  width: 85%;
+  margin: 0 auto;
+  padding: 2% 3%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+}
+.aboutMeSec .aboutMeText {
+  width: 48%;
+}
+.aboutMeSec .aboutMeText h3 {
+  font-size: 2.3rem;
+  margin: 0 0 3%;
+}
+.aboutMeSec .aboutMeSkills {
+  width: 48%;
+}
+.aboutMeSec .aboutMeSkills h3 {
+  font-size: 2.3rem;
+  margin: 0 0 3%;
+}
+.aboutMeSec .aboutMeSkills ul li {
+  border: 1px solid grey;
+  padding: 2.5%;
 }
