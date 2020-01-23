@@ -119,7 +119,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -149,13 +149,13 @@ body {
   src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v8/1cXxaUPXBpj2rGoU7C9WiHGA.ttf) format('truetype');
 }
 body {
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   max-width: 100%;
   font-size: 62.5%;
   box-sizing: border-box;
 }
 button {
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
 }
 h1,
 h2,
@@ -163,7 +163,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
 }
 #navsec {
   position: fixed;
@@ -245,7 +245,7 @@ h6 {
   margin: 0 0 1%;
 }
 .headersec h2 {
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   font-size: 2.5rem;
 }
 .headersec hr {
@@ -301,4 +301,93 @@ h6 {
 }
 .aboutMeSec .aboutMeSkills ul li:hover {
   color: #1089ff;
+}
+.lastSec {
+  width: 85%;
+  margin: 0 auto;
+  padding: 2% 3%;
+  font-size: 1rem;
+}
+.lastSec .workExp h3 {
+  font-size: 2.3rem;
+}
+.lastSec .workExp h4 {
+  font-size: 1.7rem;
+}
+.lastSec .edu h3 {
+  font-size: 2.3rem;
+}
+.lastSec .edu h4 {
+  font-size: 1.7rem;
+}
+.lastSec .edu .eduTitles ul {
+  display: flex;
+  align-items: center;
+  padding: 1.5% 0;
+  border-bottom: solid 1px grey;
+  text-align: center;
+}
+.lastSec .edu .eduTitles ul li {
+  text-align: center;
+  margin: 0 4%;
+  width: 100%;
+  line-height: 1.3rem;
+}
+.lastSec .edu .eduYrs {
+  background: #bdbdbd;
+}
+.lastSec .edu .eduYrs ul {
+  display: flex;
+  align-items: center;
+  padding: 1.5% 0;
+  border-bottom: solid 1px grey;
+  text-align: center;
+}
+.lastSec .edu .eduYrs ul li {
+  text-align: center;
+  margin: 0 4%;
+  width: 100%;
+  line-height: 1.3rem;
+}
+.lastSec .edu .eduSch ul {
+  display: flex;
+  align-items: center;
+  padding: 1.5% 0;
+  border-bottom: solid 1px grey;
+  text-align: center;
+}
+.lastSec .edu .eduSch ul li {
+  text-align: center;
+  margin: 0 4%;
+  width: 100%;
+  line-height: 1.3rem;
+}
+.lastSec .edu .eduFocus {
+  background: #bdbdbd;
+}
+.lastSec .edu .eduFocus ul {
+  display: flex;
+  align-items: center;
+  padding: 1.5% 0;
+  border-bottom: solid 1px grey;
+  text-align: center;
+}
+.lastSec .edu .eduFocus ul li {
+  text-align: center;
+  margin: 0 4%;
+  width: 100%;
+  line-height: 1.3rem;
+}
+.lastSec .edu .eduLoc ul {
+  display: flex;
+  align-items: center;
+  padding: 1.5% 0;
+  border-bottom: solid 1px grey;
+  text-align: center;
+}
+.lastSec .edu .eduLoc ul li {
+  text-align: center;
+  margin: 0 4%;
+  width: 100%;
+  line-height: 1.3rem;
 }
