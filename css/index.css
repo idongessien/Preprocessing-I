@@ -203,6 +203,16 @@ h6 {
 #navsec h1 a:hover {
   color: grey;
 }
+@media all and (max-width: 600px) {
+  #navsec h1 a {
+    font-size: 2rem;
+  }
+}
+@media all and (max-width: 600px) {
+  #navsec h1 {
+    margin-bottom: 4%;
+  }
+}
 #navsec nav {
   width: 50%;
 }
@@ -222,6 +232,24 @@ h6 {
 #navsec nav ul a:hover {
   color: #1089ff;
 }
+@media all and (max-width: 600px) {
+  #navsec nav ul a {
+    font-size: 0.7rem;
+  }
+}
+@media all and (max-width: 600px) {
+  #navsec nav ul {
+    margin-bottom: 4%;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@media all and (max-width: 600px) {
+  #navsec {
+    flex-direction: column;
+    align-content: space-around;
+  }
+}
 .headersec {
   background: #edf7fa;
   padding: 4% 2.5%;
@@ -239,14 +267,34 @@ h6 {
 }
 .headersec .imgcrop img {
   width: 100%;
+  border-radius: 100%;
+}
+@media all and (max-width: 600px) {
+  .headersec .imgcrop {
+    width: 35%;
+    height: 40vh;
+    align-self: center;
+    margin: 0 0 1%;
+  }
 }
 .headersec h1 {
   font-size: 4rem;
   margin: 0 0 1%;
 }
+@media all and (max-width: 600px) {
+  .headersec h1 {
+    font-size: 2.1rem;
+  }
+}
 .headersec h2 {
   font-family: "Comfortaa", cursive;
   font-size: 2.5rem;
+}
+@media all and (max-width: 600px) {
+  .headersec h2 {
+    font-size: 1.8rem;
+    margin: 2% 0;
+  }
 }
 .headersec hr {
   margin: 2% 0;
@@ -255,10 +303,23 @@ h6 {
   width: 42%;
   opacity: 0.4;
 }
+@media all and (max-width: 600px) {
+  .headersec hr {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
 .headersec p {
   font-size: 1.3rem;
   line-height: 2rem;
   margin: 0 0 3%;
+}
+@media all and (max-width: 600px) {
+  .headersec p {
+    font-size: 1rem;
+    margin: 2% 0 3%;
+    line-height: 1.5rem;
+  }
 }
 .headersec a {
   text-decoration: none;
@@ -271,6 +332,19 @@ h6 {
 }
 .headersec a:hover {
   background: grey;
+}
+@media all and (max-width: 600px) {
+  .headersec a {
+    font-size: 1rem;
+  }
+}
+@media all and (max-width: 600px) {
+  .headersec {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    padding: 25% 2% 5%;
+  }
 }
 .aboutMeSec {
   width: 85%;
@@ -288,6 +362,18 @@ h6 {
   font-size: 2.3rem;
   margin: 0 0 3%;
 }
+@media all and (max-width: 500px) {
+  .aboutMeSec .aboutMeText h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2%;
+  }
+}
+@media all and (max-width: 500px) {
+  .aboutMeSec .aboutMeText {
+    width: 100%;
+    margin: 2% 0 4%;
+  }
+}
 .aboutMeSec .aboutMeSkills {
   width: 48%;
 }
@@ -295,12 +381,38 @@ h6 {
   font-size: 2.3rem;
   margin: 0 0 3%;
 }
+@media all and (max-width: 500px) {
+  .aboutMeSec .aboutMeSkills h3 {
+    font-size: 1.8rem;
+    margin: 2% 0 4%;
+  }
+}
+@media all and (max-width: 500px) {
+  .aboutMeSec .aboutMeSkills h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2.5%;
+  }
+}
 .aboutMeSec .aboutMeSkills ul li {
   border: 1px solid grey;
   padding: 2.5%;
 }
 .aboutMeSec .aboutMeSkills ul li:hover {
   color: #1089ff;
+}
+@media all and (max-width: 500px) {
+  .aboutMeSec .aboutMeSkills {
+    width: 100%;
+  }
+}
+@media all and (max-width: 500px) {
+  .aboutMeSec {
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    width: 100%;
+  }
 }
 .lastSec {
   width: 85%;
@@ -314,8 +426,18 @@ h6 {
 .lastSec .workExp h3 {
   font-size: 2.3rem;
 }
+@media all and (max-width: 500px) {
+  .lastSec .workExp h3 {
+    font-size: 1.8rem;
+  }
+}
 .lastSec .workExp h4 {
   font-size: 1.7rem;
+}
+@media all and (max-width: 500px) {
+  .lastSec .workExp h4 {
+    font-size: 1.3rem;
+  }
 }
 .lastSec .workExp .workTitles ul {
   display: flex;
@@ -330,6 +452,11 @@ h6 {
   width: 100%;
   line-height: 1.3rem;
 }
+@media all and (max-width: 500px) {
+  .lastSec .workExp .workTitles {
+    font-size: 4rem;
+  }
+}
 .lastSec .workExp .workItems ul {
   display: flex;
   align-items: center;
@@ -343,11 +470,26 @@ h6 {
   width: 100%;
   line-height: 1.3rem;
 }
+@media all and (max-width: 500px) {
+  .lastSec .workExp {
+    font-size: 0.9rem;
+  }
+}
 .lastSec .edu h3 {
   font-size: 2.3rem;
 }
+@media all and (max-width: 500px) {
+  .lastSec .edu h3 {
+    font-size: 1.8rem;
+  }
+}
 .lastSec .edu h4 {
   font-size: 1.7rem;
+}
+@media all and (max-width: 500px) {
+  .lastSec .edu h4 {
+    font-size: 1.3rem;
+  }
 }
 .lastSec .edu .eduTitles ul {
   display: flex;
@@ -420,6 +562,16 @@ h6 {
   width: 100%;
   line-height: 1.3rem;
 }
+@media all and (max-width: 500px) {
+  .lastSec .edu {
+    font-size: 0.9rem;
+  }
+}
+@media all and (max-width: 500px) {
+  .lastSec {
+    width: 100%;
+  }
+}
 footer {
   background: black;
   color: white;
@@ -443,4 +595,14 @@ footer #contact .icons a {
 }
 footer #contact .icons a:hover {
   color: grey;
+}
+@media all and (max-width: 500px) {
+  footer #contact .icons a {
+    font-size: 1.5rem;
+  }
+}
+@media all and (max-width: 500px) {
+  footer {
+    font-size: 0.5rem;
+  }
 }
