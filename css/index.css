@@ -304,15 +304,44 @@ h6 {
 }
 .lastSec {
   width: 85%;
-  margin: 0 auto;
+  margin: 0 auto 2%;
   padding: 2% 3%;
   font-size: 1rem;
+}
+.lastSec .workExp {
+  margin-bottom: 4%;
 }
 .lastSec .workExp h3 {
   font-size: 2.3rem;
 }
 .lastSec .workExp h4 {
   font-size: 1.7rem;
+}
+.lastSec .workExp .workTitles ul {
+  display: flex;
+  align-items: center;
+  padding: 1.5% 0;
+  border-bottom: solid 1px grey;
+  text-align: center;
+}
+.lastSec .workExp .workTitles ul li {
+  text-align: center;
+  margin: 0 4%;
+  width: 100%;
+  line-height: 1.3rem;
+}
+.lastSec .workExp .workItems ul {
+  display: flex;
+  align-items: center;
+  padding: 1.5% 0;
+  border-bottom: solid 1px grey;
+  text-align: center;
+}
+.lastSec .workExp .workItems ul li {
+  text-align: center;
+  margin: 0 4%;
+  width: 100%;
+  line-height: 1.3rem;
 }
 .lastSec .edu h3 {
   font-size: 2.3rem;
@@ -390,4 +419,28 @@ h6 {
   margin: 0 4%;
   width: 100%;
   line-height: 1.3rem;
+}
+footer {
+  background: black;
+  color: white;
+  font-size: 0.8rem;
+  padding: 3%;
+  text-align: center;
+}
+footer #contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer #contact .icons {
+  margin-bottom: 1.5%;
+  width: 100%;
+}
+footer #contact .icons a {
+  font-size: 2rem;
+  color: white;
+  margin: 0.5%;
+}
+footer #contact .icons a:hover {
+  color: grey;
 }

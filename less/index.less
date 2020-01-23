@@ -380,19 +380,40 @@ h6 {
 
 .lastSec {
   width: 85%;
-  margin: 0 auto;
+  margin: 0 auto 2%;
   padding: 2% 3%;
   font-size: 1rem;
 
   .workExp {
+	  margin-bottom: 4%;
     h3 {
       font-size: 2.3rem;
     }
 
     h4 {
       font-size: 1.7rem;
-    }
-  }
+	}
+	
+	.workTitles {
+		ul {
+			.tableStyles();
+	
+			li {
+			  .liStyles();
+			}
+		  }
+	} // end .lastSec .workExp .workTitles
+
+	.workItems {
+		ul {
+			.tableStyles();
+	
+			li {
+			  .liStyles();
+			}
+		  }
+	}// end .lastSec .workExp .workItems
+  } // end .lastSec .workExp
 
   .edu {
     h3 {
@@ -401,7 +422,7 @@ h6 {
 
     h4 {
       font-size: 1.7rem;
-    }
+	}
 
     .eduTitles {
       ul {
@@ -436,7 +457,7 @@ h6 {
 
     .eduFocus {
 		.liStylesTwo();
-		
+
       ul {
         .tableStyles();
 
@@ -456,4 +477,35 @@ h6 {
       }
     }
   } // end .lastSec .edu
-}
+} // end .lastsec
+
+
+// Footer Styles 
+footer {
+	background: black;
+	color: white; 
+	font-size: 0.8rem;
+	padding: 3%;
+	text-align: center;
+
+	#contact {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.icons {
+			margin-bottom: 1.5%;
+			width: 100%;
+			
+			a {
+				font-size: 2rem;
+				color: white;
+				margin: 0.5%;
+
+				&:hover {
+					color: grey;
+				}
+			} // end links
+		} // end .icons
+	} // end #contact
+} // end footer
