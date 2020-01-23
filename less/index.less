@@ -132,6 +132,26 @@ h1, h2, h3, h4, h5, h6 {
 	.flexNav();
 	background: @navBgColour;
 
+	.subNav {
+		position: fixed;
+		z-index: 98;
+		top: 9.5%;
+		left: 71%;
+		background: @navBgColour;
+		font-size: .9rem;
+		text-transform: uppercase;
+		width: 15%;
+		text-align: center;
+		opacity: 0;
+
+		ul {
+			li {
+				padding: 5%;
+				border-top: solid 1px white;
+			}
+		}
+	}
+
 	h1 {
 		font-size: 2.5rem;
 		a{
@@ -242,6 +262,10 @@ h1, h2, h3, h4, h5, h6 {
 			li {
 				border: 1px solid grey;
 				padding: 2.5%;
+
+				&:hover {
+					color: @hoverColour;
+				}
 			}
 		}
 	}// end .aboutMeSec .aboutMeSkills
